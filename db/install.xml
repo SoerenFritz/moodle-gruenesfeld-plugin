@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<XMLDB PATH="mod/gruenesfeld/db" VERSION="2026032600" COMMENT="XMLDB file for Moodle mod/gruenesfeld">
+  <TABLES>
+    <TABLE NAME="gruenesfeld" COMMENT="Main table for gruenesfeld activity">
+      <FIELDS>
+        <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" UNSIGNED="true" SEQUENCE="true"/>
+        <FIELD NAME="course" TYPE="int" LENGTH="10" NOTNULL="true" UNSIGNED="true" DEFAULT="0" COMMENT="Course ID"/>
+        <FIELD NAME="name" TYPE="char" LENGTH="255" NOTNULL="true" COMMENT="Name of the gruenesfeld instance"/>
+        <FIELD NAME="intro" TYPE="text" NOTNULL="false" COMMENT="Intro text"/>
+        <FIELD NAME="introformat" TYPE="int" LENGTH="4" NOTNULL="false" DEFAULT="0" COMMENT="Intro format"/>
+        <FIELD NAME="timemodified" TYPE="int" LENGTH="10" NOTNULL="true" UNSIGNED="true" DEFAULT="0" COMMENT="Last modified timestamp"/>
+        <FIELD NAME="description_text" TYPE="text" NOTNULL="false" COMMENT="A custom text field for the activity"/>
+      </FIELDS>
+      <KEYS>
+        <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
+      </KEYS>
+    </TABLE>
+  </TABLES>
+</XMLDB>
