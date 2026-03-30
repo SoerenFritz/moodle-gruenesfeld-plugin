@@ -9,4 +9,4 @@ require_course_login($course);
 
 redirect(new moodle_url('/course/view.php', ['id'=>$course->id]));
 
-
+//Test mit GitHub
